@@ -1,0 +1,206 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b7861174-4e8c-49c5-b873-8b8205cd3998",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "03 LOOPS"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "7050f23a-6891-48e6-9146-0c6289e976d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1, 11):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "964f9f75-c53b-4c09-9c0b-cb11f664d837",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter n:  12\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Sum = 78\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter n: \"))\n",
+    "sum = 0\n",
+    "\n",
+    "for i in range(1, n + 1):\n",
+    "    sum += i\n",
+    "\n",
+    "print(\"Sum =\", sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "4c459c45-037c-4ffb-83ab-cc04e203b7c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter number:  13\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "13 x 1 = 13\n",
+      "13 x 2 = 26\n",
+      "13 x 3 = 39\n",
+      "13 x 4 = 52\n",
+      "13 x 5 = 65\n",
+      "13 x 6 = 78\n",
+      "13 x 7 = 91\n",
+      "13 x 8 = 104\n",
+      "13 x 9 = 117\n",
+      "13 x 10 = 130\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter number: \"))\n",
+    "\n",
+    "for i in range(1, 11):\n",
+    "    print(n, \"x\", i, \"=\", n * i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "069ba19f-e126-44d0-8069-9bab5d68e56f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter number:  13\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Factorial = 6227020800\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter number: \"))\n",
+    "fact = 1\n",
+    "\n",
+    "for i in range(1, n + 1):\n",
+    "    fact *= i\n",
+    "\n",
+    "print(\"Factorial =\", fact)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "1f3ea7b9-343d-4ca3-878b-8a0505aa1ec9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter number:  12\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not Prime\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input(\"Enter number: \"))\n",
+    "flag = 0\n",
+    "\n",
+    "for i in range(2, n):\n",
+    "    if n % i == 0:\n",
+    "        flag = 1\n",
+    "        break\n",
+    "\n",
+    "if flag == 0 and n > 1:\n",
+    "    print(\"Prime\")\n",
+    "else:\n",
+    "    print(\"Not Prime\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "92fc9bbe-35fe-40f1-9efd-c2b3bf99a58a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
